@@ -1,0 +1,541 @@
+/**
+ *	Versión 1.0.0
+ */
+ @charset "utf-8";
+
+ /**
+  *	Fonts
+  */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+ 
+ /**
+  *	Mobile
+  */
+ 
+ /**	General */
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     font-size: 10px;
+     line-height: 1;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+ }
+ 
+ /**	Body */
+ body {
+     background-color: rgb(33, 33, 33);
+     color: #d0e0e3;
+ }
+ 
+ /**	Header */
+ header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2em;
+ }
+ 
+ /**	Encabezados */
+ h1,
+ h2,
+ h3 {
+     font-family: 'Montserrat';
+     font-size: 3.6em;
+     line-height: 1.5;
+     font-weight: 700;
+     text-align: center;
+ }
+ 
+ h2,
+ h3 {
+     margin: 1em 0;
+     font-size: 3em;
+     color: #134f5c;
+ }
+ 
+ /* Banner */
+ #banner{
+     margin: auto;
+     width: 100%;
+ }
+ 
+ #banner div .card-body{
+     color: white;
+     font-size: 2rem;
+     background-color: rgb(7, 91, 104);
+     padding: 2rem;
+     text-align: center;
+ }
+ 
+ /**	Main */
+ main {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     padding: 4em 2em;
+     background-color: #fff;
+ }
+ 
+ ul,
+ ol {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     align-items: flex-start;
+     width: 100%;
+ }
+ 
+ p,
+ ul li,
+ ol li {
+     font-size: 2.4em;
+     line-height: 1.5;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ ul li,
+ ol li {
+     margin-left: 2em;
+ }
+ 
+ p strong,
+ p em,
+ p span,
+ p a,
+ ul li strong,
+ ul li em,
+ ul li a,
+ ol li strong,
+ ol li em,
+ ol li a {
+     font-size: 1em;
+ }
+ 
+ p a,
+ ul li a,
+ ol li a {
+     color: #134f5c;
+ }
+ 
+ p strong,
+ ul li strong,
+ ol li strong {
+     font-weight: 700;
+ }
+ 
+ p em,
+ ul li em,
+ ol li em {
+     font-style: italic;
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ label {
+     font-size: 2.4em;
+     line-height: 1.5;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ select{
+     width: 200px;
+     height: 40px;
+     font-size: 2rem;
+     padding: 5px;
+ }
+ 
+ fieldset {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     margin: 0.5em 0;
+     padding: 1em 2em;
+ }
+ 
+ legend {
+     padding: 0 0.5em;
+     font-size: 1.6em;
+     line-height: 1.5;
+     font-weight: 400;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ input {
+     margin: 0.5em 0;
+     border: 1px solid #134f5c;
+     border-radius: 0.5em;
+     padding: 0 1em;
+     font-size: 2.4em;
+     line-height: 1.5;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ button,
+ input[type='button'],
+ input[type='submit'] {
+     margin: 0.5em 0;
+     border: none;
+     border-radius: 0.5em;
+     padding: 0.25em 0.5em;
+     background: #000000;
+     cursor: pointer;
+     font-size: 2.4em;
+     line-height: 1.5;
+     text-align: center;
+     color: #d0e0e3;
+ }
+ 
+ input[type='button']:disabled,
+ input[type='submit']:disabled {
+     opacity: 0.8;
+     cursor: not-allowed;
+ }
+ 
+ form textarea {
+     margin: 0.5em 0;
+     border-radius: 0.5em;
+     border: 1px solid #134f5c;
+     padding: 0 0.5em;
+     background: #d0e0e3;
+     font-size: 1.6em;
+     line-height: 1.5;
+     font-weight: 400;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ form select {
+     margin: 0.5em 0;
+     border-radius: 0.5em;
+     border: 1px solid #134f5c;
+     padding: 0 0.5em;
+     background: #d0e0e3;
+     font-size: 1.6em;
+     line-height: 1.5;
+     font-weight: 400;
+     text-align: left;
+     color: #134f5c;
+ }
+ 
+ hr {
+     margin: 1em 0%;
+     width: 100%;
+     height: 0.1em;
+ }
+ 
+ /**	Footer */
+ footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 2em;
+ }
+ 
+ footer ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     list-style: none;
+ }
+ 
+ footer ul li {
+     font-family: 'Montserrat';
+     font-size: 1.4em;
+     line-height: 1.5;
+     text-align: center;
+     color: #d0e0e3;
+ }
+ 
+ footer ul li a {
+     font-family: 'Montserrat';
+     font-size: 1em;
+     text-decoration: none;
+     color: #d0e0e3;
+ }
+ 
+ /**	Overs */
+ p a:hover,
+ li a:hover,
+ button:hover,
+ input[type='button']:hover,
+ input[type='submit']:hover {
+     opacity: 0.8;
+ }
+ 
+ /**	Carrito */
+ #minicarrito {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.5em 1em;
+     width: 100%;
+     background: rgba(30, 94, 153, 0.385);
+ }
+ 
+ #productos {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 1em 0;
+     width: 100%;
+     padding: 1em;
+     background: rgba(24, 100, 147, 0.368);
+ }
+ 
+ #productos div {
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     width: 90%;
+     padding: 1em;
+ }
+ 
+ #productos img {
+     width: 90%;
+     margin: 1em 5%;
+ }
+ 
+ #productos div div {
+     padding: 4rem;
+     background-color: white;
+     margin: -1rem;
+     width: 90%;
+ }
+
+ 
+ 
+ #productos h3,
+ #productos p {
+     margin: 0;
+     text-align: center;
+ }
+ 
+#productos p{
+    font-size: 1.8rem;
+}
+
+#productos .precio{
+    font-size: 2.3rem;
+}
+
+#productos .categoria{
+    font-size: 2.3rem;
+}
+
+ .modal {
+     position: fixed;
+     z-index: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: auto;
+     padding: 2rem;
+     background-color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ .modal a {
+     text-decoration: none;
+     color: #d0e0e3;
+ }
+ 
+ .modal a.cerrar {
+     position: fixed;
+     z-index: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     top: 1em;
+     right: 1em;
+     border-radius: 2.5em;
+     width: 5em;
+     height: 5em;
+     background-color: rgba(255, 255, 255, 0.9);
+     font-size: 1em;
+     font-weight: 400;
+     text-align: center;
+     color: #1a4a5e;
+     text-decoration: none;
+ }
+ 
+ .modal a.cerrar:hover {
+     background-color: #1a4a5e;
+     color: rgba(255, 255, 255, 0.9);
+ }
+ 
+ .modal img {
+     height: 30%;
+ }
+ 
+ .modal h3,
+ .modal p,
+ .modal li {
+     margin: 0;
+     text-align: center;
+     color: #d0e0e3;
+ }
+ 
+ .modal li {
+     display: flex;
+     justify-content: space-around;
+     margin: 0.25em 0;
+     width: 90%;
+ }
+ 
+ .modal li span {
+     font-size: 1em;
+ }
+ 
+ #modalCarrito{
+     display: none;
+ }
+
+ /* #modalProducto{
+    display: none;
+ } */
+ 
+ /* TODO: */
+ #modalFormulario{
+     display: none;
+ }
+
+ #modalProducto{
+    display: none;
+}
+
+#modalDeProductos{
+    text-align: center;
+    margin: auto;
+    max-width: 650px;
+    border: 7px;
+    border-style: groove;
+    border-radius: 40px;
+    background-color: #ffffff;
+}
+
+#modalDeProductos .imgModal{
+    width: 75%;
+}
+
+#modalDeProductos h3{
+    border-bottom: solid #105463;
+    color: #1a4a5e;
+}
+
+#modalDeProductos p{
+    color: #1a4a5e;
+    padding: 20px;
+}
+
+#modalDeProductos button{
+    background-color: #236987;
+}
+ 
+.alertaMensaje{
+    background-color: red;
+    color: white;
+    height: 3rem;
+}
+
+.alertaMensaje div{
+    font-size: 3rem;
+}
+
+
+nav ul li a{
+    color: white;
+    text-align: center;
+}
+
+.presentacion h2, p{
+    text-align: center;
+    margin: auto;
+}
+
+.presentacion p{
+    margin-bottom: 3rem;
+}
+ /* TODO: */
+ 
+ form span{
+     font-size: 2rem;
+     color: rgb(255, 255, 255);
+ }
+ 
+ form{
+     /* width: 100%; */
+     background-color: #4c95b2;
+     border-radius: 1rem;
+     padding: 2rem;
+     text-align: center;
+ }
+ 
+ form .formulario{
+     display: flex;
+ }
+ 
+ form div{
+     margin-bottom: 2rem;
+ }
+ 
+ #formularioContenedor{
+     margin: 0 auto;
+ }
+ 
+ /**
+  *	Web
+  */
+ @media screen and (min-width: 960px) {
+     #productos {
+         flex-direction: row;
+     }
+ 
+     #productos div {
+         width: 50%;
+     }
+ 
+     /**	Footer */
+     footer ul {
+         flex-direction: row;
+     }
+
+ 
+ }
+ 
+ 
+ 
